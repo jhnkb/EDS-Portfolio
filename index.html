@@ -1,110 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>John Bolibol | EDS 124BR Portfolio</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="nav-container">
-      <h2>John Bolibol</h2>
+<div class="page">
 
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-      </div>
-    </div>
-  </nav>
+  <!-- LEFT SIDE -->
+  <aside class="sidebar">
 
+    <h1>john bolibol</h1>
 
-  <!-- Hero -->
-  <header id="home" class="hero">
-
+    <p class="subtitle">digital teaching portfolio</p>
     <p class="course">EDS 124BR</p>
 
-    <h1>Digital Teaching Portfolio</h1>
+    <div class="intro">
+      a collection of my projects,
+      reflections, and coursework
+      from EDS 124BR.
+    </div>
 
-    <p class="subtitle">
-      A collection of my projects, reflections, and work from EDS 124BR.
-    </p>
+    <nav>
+      <a href="#" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#reflections">reflections</a>
+    </nav>
 
-    <a class="button" href="#projects">View My Work</a>
-
-  </header>
-
-
-  <!-- About -->
-  <section id="about">
-
-    <p class="section-label">ABOUT</p>
-
-    <h2>Welcome to my portfolio.</h2>
-
-    <p>
-      My name is John Bolibol. This portfolio documents my work and
-      learning throughout EDS 124BR.
-    </p>
-
-  </section>
+  </aside>
 
 
-  <!-- Projects -->
-  <section id="projects">
+  <!-- RIGHT SIDE -->
+  <main class="content" id="projects">
 
-    <p class="section-label">COURSEWORK</p>
+    <article class="project">
 
-    <h2>Projects</h2>
-
-
-    <div class="project-card">
-
-      <div class="project-info">
-
-        <p class="project-number">01</p>
-
-        <h3>
-          Sequences Video: Show What You Know
-        </h3>
-
-        <p>
-          Explain Your Program
-        </p>
-
+      <div class="project-meta">
+        <span class="project-number">01.</span>
+        <span class="line"></span>
+        <span class="project-date">sep 2026</span>
       </div>
 
+      <h2>Sequences Video: Show What You Know</h2>
+
+      <p class="project-subtitle">
+        Explain Your Program
+      </p>
 
       <div class="video-container">
-
         <iframe
           src="https://www.youtube.com/embed/iZWpTIsUUCQ"
           title="Sequences Video"
           allowfullscreen>
         </iframe>
-
       </div>
 
-    </div>
+      <p class="project-description">
+        In this video, I explain my program and walk through
+        how it works, including the logic behind the sequences
+        and how each part contributes to the overall behavior.
+      </p>
 
-  </section>
+      <div class="tags">
+        <span class="tag">video</span>
+        <span class="tag">sequences</span>
+        <span class="tag">scratch</span>
+      </div>
 
+    </article>
 
-  <!-- Footer -->
-  <footer>
+  </main>
 
-    <p>
-      John Bolibol · EDS 124BR
-    </p>
-
-  </footer>
+</div>
 
 </body>
-</html>
