@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  border-bottom: 1px solid #e5e7eb;
+  background: white;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container h2 {
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+
+/* HERO */
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+
+  padding: 120px 30px 140px;
+}
+
+.course {
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 8vw, 82px);
+  line-height: 1.05;
+
+  max-width: 850px;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #6b7280;
+
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-block;
+
+  background: #2563eb;
+  color: white;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  padding: 13px 22px;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+
+/* SECTIONS */
+
+section {
+  max-width: 1100px;
+  margin: auto;
+
+  padding: 100px 30px;
+}
+
+#about {
+  border-top: 1px solid #e5e7eb;
+}
+
+.section-label {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 14px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about p:last-child {
+  max-width: 650px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+
+/* PROJECT */
+
+#projects {
+  border-top: 1px solid #e5e7eb;
+}
+
+.project-card {
+  margin-top: 50px;
+
+  padding: 35px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+
+  background: #f9fafb;
+}
+
+.project-number {
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.project-info h3 {
+  font-size: 26px;
+}
+
+.project-info > p:last-child {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+
+/* RESPONSIVE VIDEO */
+
+.video-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 800px;
+
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  border-radius: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+  max-width: 1100px;
+
+  margin: auto;
+  padding: 40px 30px;
+
+  border-top: 1px solid #e5e7eb;
+
+  color: #6b7280;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .nav-container {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+}
