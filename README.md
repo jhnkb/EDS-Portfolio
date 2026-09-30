@@ -1,8 +1,11 @@
+---
+title: EDS 124BR - Portfolio
+---
 
 ## Sequences Video: Show What You Know: Explain Your Program
 
 <iframe
-  width="561"
+  width="560"
   height="315"
   src="https://www.youtube.com/embed/iZWpTIsUUCQ"
   title="YouTube video player"
