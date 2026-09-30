@@ -6,7 +6,7 @@ This is my digital teaching portfolio.
 
 Sequences Video: Show What You Know: Explain Your Program
 
-<video src="Peer graded Assignment Show What You Know Explain Your Program.mov" controls width="100%"></video>
+<video src="my-demo-video.mp4" controls width="100%"></video>
 
 
 
