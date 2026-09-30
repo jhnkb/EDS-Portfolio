@@ -1,4 +1,3 @@
-# EDS 124BR - Portfolio
 John Bolibol
 
 This is my digital teaching portfolio.
