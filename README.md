@@ -6,9 +6,7 @@ This is my digital teaching portfolio.
 
 Sequences Video: Show What You Know: Explain Your Program
 
-<video src="my-demo-video.mp4" controls width="100%"></video>
-
-
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 
 
 
