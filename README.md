@@ -2,7 +2,7 @@
 ## Sequences Video: Show What You Know: Explain Your Program
 
 <iframe
-  width="560"
+  width="561"
   height="315"
   src="https://www.youtube.com/embed/iZWpTIsUUCQ"
   title="YouTube video player"
