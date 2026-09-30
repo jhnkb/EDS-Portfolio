@@ -1,7 +1,28 @@
+/* =========================================
+   EDS 124BR PORTFOLIO
+   Minimal / personal style
+   ========================================= */
+
+:root {
+  --background: #fffefa;
+  --text: #292826;
+  --muted: #777570;
+  --line: #e8e5df;
+
+  /* Your palette */
+  --yellow: #e9b565;
+  --green: #a7ad60;
+  --peach: #ef9c7a;
+  --gray: #d9d9dd;
+
+  --content-width: 1180px;
+}
+
+
+/* ---------- RESET ---------- */
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -9,228 +30,432 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #1f2937;
-  background: #ffffff;
+  margin: 0;
+
+  background: var(--background);
+  color: var(--text);
+
+  font-family:
+    "Courier New",
+    Courier,
+    monospace;
+
+  font-size: 15px;
   line-height: 1.6;
 }
 
-
-/* NAVIGATION */
-
-nav {
-  border-bottom: 1px solid #e5e7eb;
-  background: white;
-}
-
-.nav-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px 30px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-container h2 {
-  font-size: 20px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #4b5563;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #2563eb;
+a {
+  color: inherit;
 }
 
 
-/* HERO */
+/* =========================================
+   PAGE LAYOUT
+   ========================================= */
 
-.hero {
-  max-width: 1100px;
-  margin: auto;
+.page {
+  width: min(var(--content-width), calc(100% - 60px));
+  margin: 70px auto;
 
-  padding: 120px 30px 140px;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 85px;
+
+  align-items: start;
 }
 
-.course {
-  color: #2563eb;
-  font-weight: 700;
-  letter-spacing: 2px;
 
-  margin-bottom: 15px;
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.sidebar {
+  position: sticky;
+  top: 50px;
 }
 
-.hero h1 {
-  font-size: clamp(48px, 8vw, 82px);
-  line-height: 1.05;
 
-  max-width: 850px;
+/* optional profile image */
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
   margin-bottom: 25px;
 }
 
-.subtitle {
-  font-size: 20px;
-  color: #6b7280;
 
-  max-width: 600px;
-  margin-bottom: 40px;
-}
+.sidebar h1 {
+  margin: 0 0 4px;
 
-.button {
-  display: inline-block;
-
-  background: #2563eb;
-  color: white;
-
-  text-decoration: none;
-  font-weight: 600;
-
-  padding: 13px 22px;
-  border-radius: 8px;
-}
-
-.button:hover {
-  background: #1d4ed8;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 
-/* SECTIONS */
-
-section {
-  max-width: 1100px;
-  margin: auto;
-
-  padding: 100px 30px;
-}
-
-#about {
-  border-top: 1px solid #e5e7eb;
-}
-
-.section-label {
-  color: #2563eb;
-  font-weight: 700;
-  font-size: 14px;
-
-  letter-spacing: 2px;
-
-  margin-bottom: 12px;
-}
-
-section h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-#about p:last-child {
-  max-width: 650px;
-  color: #6b7280;
-  font-size: 18px;
+.sidebar h1::after {
+  content: ".";
+  color: var(--yellow);
 }
 
 
-/* PROJECT */
+.sidebar .subtitle {
+  margin: 0;
 
-#projects {
-  border-top: 1px solid #e5e7eb;
-}
-
-.project-card {
-  margin-top: 50px;
-
-  padding: 35px;
-
-  border: 1px solid #e5e7eb;
-  border-radius: 15px;
-
-  background: #f9fafb;
-}
-
-.project-number {
-  color: #2563eb;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.project-info h3 {
-  font-size: 26px;
-}
-
-.project-info > p:last-child {
-  color: #6b7280;
-  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 
-/* RESPONSIVE VIDEO */
+.sidebar .course {
+  margin-top: 2px;
 
-.video-container {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+
+/* intro box */
+
+.intro {
+  margin: 28px 0;
+
+  padding: 17px;
+
+  background: #f6f4ef;
+
+  border-radius: 3px;
+
+  color: #55524e;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+  margin-top: 28px;
+}
+
+nav a {
+  display: block;
+
   position: relative;
 
-  width: 100%;
-  max-width: 800px;
+  margin: 12px 0;
+  padding-left: 28px;
 
-  aspect-ratio: 16 / 9;
+  color: #55524e;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
 }
 
+
+nav a::before {
+  content: "";
+
+  position: absolute;
+
+  left: 3px;
+  top: 50%;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  transform: translateY(-50%);
+}
+
+
+nav a:hover {
+  color: var(--text);
+}
+
+
+nav a.active::before {
+  background: var(--yellow);
+}
+
+
+/* optional alternating nav colors */
+
+nav a:nth-child(2):hover::before {
+  background: var(--peach);
+}
+
+nav a:nth-child(3):hover::before {
+  background: var(--green);
+}
+
+nav a:nth-child(4):hover::before {
+  background: var(--gray);
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.content {
+  min-width: 0;
+}
+
+
+/* =========================================
+   PROJECT / POST
+   ========================================= */
+
+.project {
+  padding-bottom: 48px;
+  margin-bottom: 45px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* little number/date row */
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 15px;
+
+  color: #99958f;
+  font-size: 12px;
+}
+
+
+.project-number {
+  color: var(--yellow);
+  font-size: 14px;
+}
+
+
+.project-meta .line {
+  height: 1px;
+
+  flex: 1;
+
+  background: var(--line);
+}
+
+
+.project-date {
+  white-space: nowrap;
+}
+
+
+/* title */
+
+.project h2 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 400;
+
+  letter-spacing: 0.5px;
+  line-height: 1.35;
+}
+
+
+.project-subtitle {
+  margin: 3px 0 22px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   VIDEO
+   ========================================= */
+
+.video-container {
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  margin: 25px 0 22px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: #eee;
+}
+
+
 .video-container iframe {
+  display: block;
+
   width: 100%;
   height: 100%;
 
   border: 0;
-  border-radius: 10px;
 }
 
 
-/* FOOTER */
+/* =========================================
+   PROJECT DESCRIPTION
+   ========================================= */
+
+.project-description {
+  max-width: 720px;
+
+  margin-top: 20px;
+
+  color: #55524e;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   TAGS
+   ========================================= */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+
+.tag {
+  padding: 5px 13px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  background: var(--gray);
+}
+
+
+.tag:nth-child(1) {
+  background: #f8d5c7;
+}
+
+.tag:nth-child(2) {
+  background: #dfe4c7;
+}
+
+.tag:nth-child(3) {
+  background: #ecebed;
+}
+
+
+/* =========================================
+   SIMPLE SECTION HEADINGS
+   ========================================= */
+
+.section-title {
+  margin: 0 0 35px;
+
+  font-size: 26px;
+  font-weight: 400;
+}
+
+
+.section-title::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 45px;
+  height: 1px;
+
+  margin-left: 15px;
+
+  vertical-align: middle;
+
+  background: var(--line);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
 
 footer {
-  max-width: 1100px;
+  margin-top: 50px;
+  padding-top: 20px;
 
-  margin: auto;
-  padding: 40px 30px;
+  border-top: 1px solid var(--line);
 
-  border-top: 1px solid #e5e7eb;
+  color: #aaa6a0;
 
-  color: #6b7280;
+  font-size: 11px;
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+   ========================================= */
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
 
-  .nav-container {
-    align-items: flex-start;
-    gap: 15px;
+  .page {
+    width: calc(100% - 40px);
+
+    margin: 35px auto;
+
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 
-  .nav-links {
-    gap: 15px;
+
+  .sidebar {
+    position: static;
   }
 
-  .hero {
-    padding-top: 80px;
-    padding-bottom: 90px;
+
+  .profile-image {
+    width: 110px;
+    height: 110px;
   }
 
-  section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 
-  .project-card {
-    padding: 20px;
+
+  nav a {
+    margin: 0;
+    padding-left: 17px;
+  }
+
+
+  .intro {
+    max-width: 400px;
+  }
+
+
+  .project h2 {
+    font-size: 21px;
   }
 
 }
