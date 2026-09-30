@@ -1,7 +1,3 @@
-John Bolibol
-
-This is my digital teaching portfolio.
-
 
 ## Sequences Video: Show What You Know: Explain Your Program
 
