@@ -5,6 +5,9 @@ This is my digital teaching portfolio.
 
 
 Sequences Video: Show What You Know: Explain Your Program
-https://github.com/user-attachments/assets/d1240bbd-1a81-407c-a45e-e554aa8a7bf0
+
+https://github.com/user-attachments/assets/06e2eea9-04b3-4387-a598-4ce916ecaeda
+
+
 
 
