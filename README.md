@@ -6,7 +6,7 @@ This is my digital teaching portfolio.
 
 Sequences Video: Show What You Know: Explain Your Program
 
-<video src="https://github.com/user-attachments/assets/d1240bbd-1a81-407c-a45e-e554aa8a7bf0" controls width="100%"></video>
+<video src="Peer graded Assignment Show What You Know Explain Your Program.mov" controls width="100%"></video>
 
 
 
